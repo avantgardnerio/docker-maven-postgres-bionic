@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
 RUN apt-get update \
-    && apt-get install -y postgresql postgresql-contrib sudo default-jdk maven \
+    && apt-get install -y postgresql postgresql-contrib sudo openjdk-8-jdk maven \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/ /tmp/* /var/tmp/*
 
